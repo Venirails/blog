@@ -5,6 +5,6 @@ class Notifier < ActionMailer::Base
 	  @age = employee.age
 	  @email = employee.email
 	mail(:to=>"veni.rails@gmail.com",:subject=>"A new Employee has been added")
-	#attachments['filename.jpg'] = File.read('/path/to/filename.jpg')
+	attachments['filename.jpg'] = File.read('/path/to/filename.jpg')
   end
 end
